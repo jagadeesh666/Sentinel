@@ -8,11 +8,11 @@
     },
     "resources": [
         {
-            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/46a20892-146c-422b-890e-4245faba3818')]",
-            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/46a20892-146c-422b-890e-4245faba3818')]",
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/66a20892-146c-422b-890e-4245faba3866')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/66a20892-146c-422b-890e-4245faba3866')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
             "kind": "Scheduled",
-            "apiVersion": "2025-09-01-preview",
+            "apiVersion": "2025-09-01",
             "properties": {
                 "displayName": "Azure Diagnostic settings removed from a resource",
                 "description": "This query looks for diagnostic settings that are removed from a resource.\nThis could indicate an attacker or malicious internal trying to evade detection before malicious act is performed.\nIf the diagnostic settings are being deleted as part of a parent resource deletion, the event is ignores.",
@@ -32,7 +32,6 @@
                 "techniques": [
                     "T1562"
                 ],
-                "alertRuleTemplateName": "6e95aef3-a1e0-4063-8e74-cd59aa59f245",
                 "incidentConfiguration": {
                     "createIncident": true,
                     "groupingConfiguration": {
