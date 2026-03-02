@@ -1,0 +1,25 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspace": {
+            "type": "String"
+        }
+    },
+    "resources": [
+    {
+      "type": "Microsoft.OperationalInsights/workspaces/savedSearches",
+      "apiVersion": "2020-08-01",
+      "name": "[concat(parameters('workspace'), '/RepoParser')]",
+      "properties": {
+        "etag": "*",
+        "category": "Sentinel",
+        "displayName": "Repo",
+        "FunctionAlias": "Repo",
+        "query": "print 'Parser from Github repository'",
+        "version": 2,
+        "functionParameters": "disabled:bool=False"
+      }
+    }
+    ]
+}
