@@ -1,5 +1,8 @@
 FileName, CommitSha
-Log4j+vulnerability+exploit.json,017ab558610cce9517606a21be56be3640fc89a4
-MicrosoftSentinel-ChatGPT-Playbook.json,4a424b20e4aaf1e27df43205c86e2b2b5bf38c76
-Azure Diagnostic settings removed from a resource.json,a4deb60d5227cd822b963c18b1fdfc9029c60442
+AnalyticsRules/Azure Diagnostic settings removed from a resource.json,a4deb60d5227cd822b963c18b1fdfc9029c60442
+Parsers/Repository Parser.json,b44ef5d5538c9847488a00d5377346cdd4ebef2d
+HuntingQueries/BlackCatRansowmare.json,491b9c8e181d1c00e3cce3bc85456f54217c39b9
+Workbooks/Data Collection Rule Toolkit.json,03d1b4e6ae5f3b6dc935ad6ed258abd4b6c141a7
+AutomationRules/MicrosoftSentinel-ChatGPT-Playbook.json,4a424b20e4aaf1e27df43205c86e2b2b5bf38c76
+AnalyticsRules/Log4j+vulnerability+exploit.json,017ab558610cce9517606a21be56be3640fc89a4
 
